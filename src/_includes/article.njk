@@ -1,8 +1,10 @@
 ---
 layout: 'base.njk'
 ---
-    
+
+<!-- this is the template for individual articles/posts -->
 <article class="main-article">
+  <!-- the title, image, imageAlt, and content variables are all pulled from markdown content in src/blog -->
 <div class="container container--narrow flow">
   
     <h1 class="article-title">
@@ -14,7 +16,7 @@ layout: 'base.njk'
         {{ imageAlt }}
       </figcaption>
     </figure>
-    
+   
     {{ content | safe}}
 
 </div>
