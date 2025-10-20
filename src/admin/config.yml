@@ -27,7 +27,7 @@ collections:
       - { label: "Image caption", name: "imageAlt", widget: "string" }
       - { label: "Body", name: "body", widget: "markdown" }
       
-  # CORRECTED: Configuration for the single Homepage file
+  # CRITICAL: Configuration for the single Homepage file
   - name: "pages"
     label: "Pages"
     files:
@@ -35,7 +35,7 @@ collections:
         label: "Homepage"
         name: "homepage"
         fields:
-          # --- Editable Content Fields ---
+          # --- Editable Content Fields (These are safe) ---
           - { label: "Title", name: "title", widget: "hidden" }
           - { label: "Layout", name: "layout", widget: "hidden" }
           - { label: "Hero Headline", name: "hero_headline", widget: "string", default: "Freshwater Ecology Research in the Hudson Valley" }
@@ -43,7 +43,4 @@ collections:
           - { label: "Paragraph 2", name: "hero_p2", widget: "markdown", default: "Our fieldwork focuses on sampling and analysis..." }
           - { label: "Hero Image", name: "hero_image", widget: "image", default: "assets/MohonkLake.jpeg" }
           - { label: "Image Alt Text", name: "hero_image_alt", widget: "string", default: "An image related to freshwater ecology research, such as a lake or scientific equipment" }
-          
-          # CRITICAL FIX: This field reads the Nunjucks/HTML template below the Front Matter
-          # and ensures the CMS writes it back to the file on save, preserving your design.
           - { label: "Page Template (DO NOT TOUCH)", name: "body", widget: "hidden" }
