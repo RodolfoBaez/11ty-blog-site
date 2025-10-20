@@ -31,7 +31,7 @@ collections:
   - name: "pages"
     label: "Pages"
     files:
-      - file: "src/index.njk"
+      - file: "src/index"
         label: "Homepage"
         name: "homepage"
         fields:
