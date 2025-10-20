@@ -285,21 +285,48 @@ section,
 .articles__list {
   --flow-spacer: 3rem;
   margin: 6rem 0;
-}
-
-/* //////////////////////
-  Individual article page
+}/* //////////////////////
+  Individual article page (REVISED STYLING)
   /////////////////////// */
 
-  .main-article {
-    margin-bottom: 3rem;
-  }
+/* The main container for the article content */
+.main-article {
+  margin-bottom: 3rem; 
+  /* Modern Reading Experience: Limit the width for optimal line length */
+  max-width: 90ch; /* Sets maximum width to ~70 characters, ideal for readability */
+  margin-inline: auto; /* Centers the content block horizontally */
 
-  .main-article__figure figcaption {
-    margin: 1rem 0;
-    font-size: var(--fs-300);
-    opacity: .9;
-  }
+}
+
+/* Figure (Image Container) Styling - Needs to 'break out' of the 70ch max-width */
+.main-article__figure {
+  /* Remove container padding/margins to achieve visual full-width */
+  margin-left: -1.5em;
+  margin-right: -1.5em;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+  border-radius: 0.5rem; 
+  overflow: hidden; 
+  margin-bottom: 2rem;
+  margin-top: 2rem; /* Add space above the figure */
+}
+
+/* Image within the figure */
+.main-article__figure img {
+  width: 100%; 
+  height: auto;
+  display: block;
+}
+
+/* Figure Caption Styling */
+.main-article__figure figcaption {
+  /* Add padding back to align text with the rest of the body content */
+  padding: 1rem 1.5em; 
+  margin: 0; 
+  font-size: var(--fs-300);
+  opacity: 0.8; 
+  background-color: var(--clr-primary-200); 
+  border-top: 1px solid var(--clr-primary-300); 
+}
 
 /* //////////////////////
   Article snippets
