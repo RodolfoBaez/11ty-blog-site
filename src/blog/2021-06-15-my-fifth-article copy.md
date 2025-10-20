@@ -1,6 +1,7 @@
 ---
-title: Yet another article
-author: Kevin Powell
+title: testing this 2025
+author: Rodolfo Baez
+date: 2025-10-20
 image: /assets/blog/article-5.jpg
 imageAlt: This is a test
 description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis accusantium sit illo neque rem omnis quaerat, nam similique vitae delectus ad magni vel quo maxime, magnam placeat. Reprehenderit, distinctio aliquam?
